@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<head>
+    <style>
+        body{
+            background-color:lightblue;
+        }
+        
+
+        .about-content {
+            color: darkgray;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: var(--spacing-xl);
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            max-width: 300px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .about-text {
+            padding: var(--spacing-lg);
+        }
+        
+        footer {
+            background: rgba(17, 24, 39, 0.8);
+            color: white;
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Mugisha Michael</h1>
+        <h2>Software Developer</h2>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+
+    <section class="about">
+        <div class="container about-content">
+            <img src="~/images/IMG-20210828-WA0038.jpg" class="about-image">
+            <div class="about-text">
+                <h2 style="color:darkblue">About Me</h2>
+                <p style="color:darkblue">
+                    I am a passionate software developer with a
+                    strong background in building dynamic and
+                    efficient web applications.
+                    I excel in front-end and back-end development
+                    and enjoy turning complex problems
+                    into simple, beautiful solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="container">
+            <p>&copy; 2024 Mugisha Michael. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
